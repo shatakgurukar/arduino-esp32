@@ -86,6 +86,12 @@ struct spi_struct_t {
   bool ss_invert;
 };
 
+spi_dev_t *spiGetDev(spi_t *spi) {
+  if (!spi) {
+    return NULL;
+  }
+  return (spi_dev_t *)spi->dev;
+}
 #if CONFIG_IDF_TARGET_ESP32S2
 // ESP32S2
 #define SPI_COUNT (2)

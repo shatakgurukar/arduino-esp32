@@ -17,7 +17,7 @@
 
 #include "soc/soc_caps.h"
 #if SOC_GPSPI_SUPPORTED
-
+#include "soc/spi_struct.h"
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -142,7 +142,7 @@ void spiTransferBitsNL(spi_t *spi, uint32_t data_in, uint32_t *data_out, uint8_t
  * */
 uint32_t spiFrequencyToClockDiv(uint32_t freq);
 uint32_t spiClockDivToFrequency(uint32_t freq);
-
+spi_dev_t *spiGetDev(spi_t *spi);
 #ifdef __cplusplus
 }
 #endif
