@@ -80,47 +80,20 @@ set(CORE_SRCS
   cores/esp32/WString.cpp
   )
 
-set(ARDUINO_ALL_LIBRARIES
-  ArduinoOTA
-  AsyncUDP
+set(ARDUINO_ALL_LIBRARIES  
   BLE
-  BluetoothSerial
-  DNSServer
-  EEPROM
-  ESP_I2S
-  ESP_NOW
-  ESP_SR
-  ESP_HostedOTA
-  ESPmDNS
-  Ethernet
+  BluetoothSerial  
+  EEPROM  
   FFat
-  FS
-  Hash
-  HTTPClient
-  HTTPUpdate
-  Insights
+  FS  
   LittleFS
-  Matter
-  NetBIOS
-  Network
-  OpenThread
-  PPP
-  Preferences
-  RainMaker
+  Preferences  
   SD_MMC
-  SD
-  SimpleBLE
+  SD  
   SPIFFS
   SPI
   Ticker
   Update
-  USB
-  WebServer
-  NetworkClientSecure
-  WiFi
-  WiFiProv
-  Wire
-  Zigbee
   )
 
 set(ARDUINO_LIBRARY_ArduinoOTA_SRCS libraries/ArduinoOTA/src/ArduinoOTA.cpp)
